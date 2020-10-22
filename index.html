@@ -1,11 +1,123 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title></title>
-</head>
-<body>
+<ion-content [fullscreen]="true">
+    <ion-header collapse="condense">
+      <ion-toolbar>
+        <ion-title size="large">Discover</ion-title>
+      </ion-toolbar>
+    </ion-header>
+  
+      <div *ngFor="let cat of items" class="category-block">
+  
+        <ion-row no-padding class="category-banner"
+          <ion-col text-left button tappable (click)="cat.expanded = !cat.expanded" align-self-center>
+            {{cat.category}}
+          </ion-col>
+        </ion-row>
+  
+        <ion-slides [options]="sliderConfig">
+          <ion-slide *ngFor="let product of cat.products">
+            <ion-card class="ion-justify-content-center">
+  
+              <ion-card-title class = "header">
+                Events This Week
+              </ion-card-header>
+          
+              <ion-card-header class = "picture">
+                <img src="https://images.sk-static.com/images/media/profile_images/artists/8623349/huge_avatar" alt="Lauv">
+              </ion-card-header>
+            
+              <ion-card-content>
+                <b>Lauv</b>
+                <br>14 September 2021(Tuseday)
+              </ion-card-content>
+          
+              <ion-button href="#" color="light" expand="block">
+                Group Chat
+              </ion-button>
+          
+            </ion-card>
+          </ion-slide>
+        </ion-slides>
+  
+      </div>
+  
+  
+  
+  
+    <ion-grid>
+      <ion-grid-header>
+        All Events
+      </ion-grid-header>
+  
+      <ion-row>
+  
+  
+        <ion-button fill="clear" size="large" class="">
+        <ion-col>
+          <img src= "https://images.sk-static.com/images/media/profile_images/artists/188358/huge_avatar">
+        </ion-col>
+        </ion-button> 
+  
+  
+        <ion-col>
+          <img src= "https://images.sk-static.com/images/media/profile_images/artists/188358/huge_avatar">
+        </ion-col>
+      </ion-row>
+  
+      <ion-row>
+        <ion-col>
+          <img src= "https://images.sk-static.com/images/media/profile_images/artists/188358/huge_avatar">
+        </ion-col>
+        <ion-col>
+          <img src= "https://images.sk-static.com/images/media/profile_images/artists/188358/huge_avatar">
+        </ion-col>
+      </ion-row>
+  
+      <ion-row>
+        <ion-col>
+          <img src= "https://images.sk-static.com/images/media/profile_images/artists/188358/huge_avatar">
+        </ion-col>
+        <ion-col>
+          <img src= "https://images.sk-static.com/images/media/profile_images/artists/188358/huge_avatar">
+        </ion-col>
+      </ion-row>
+  
+      <ion-row>
+        <ion-col>
+          <img src= "https://images.sk-static.com/images/media/profile_images/artists/188358/huge_avatar">
+        </ion-col>
+        <ion-col>
+          <img src= "https://images.sk-static.com/images/media/profile_images/artists/188358/huge_avatar">
+        </ion-col>
+      </ion-row>
+  
+      <ion-row>
+        <ion-col>
+          <img src= "https://images.sk-static.com/images/media/profile_images/artists/188358/huge_avatar">
+        </ion-col>
+        <ion-col>
+          <img src= "https://images.sk-static.com/images/media/profile_images/artists/188358/huge_avatar">
+        </ion-col>
+      </ion-row>
+  
+      <ion-row>
+        <ion-col>
+          <img src= "https://images.sk-static.com/images/media/profile_images/artists/188358/huge_avatar">
+        </ion-col>
+        <ion-col>
+          <img src= "https://images.sk-static.com/images/media/profile_images/artists/188358/huge_avatar">
+        </ion-col>
+      </ion-row>
+  
+      <ion-row>
+        <ion-col>
+          <img src= "https://images.sk-static.com/images/media/profile_images/artists/188358/huge_avatar">
+        </ion-col>
+        <ion-col>
+          <img src= "https://images.sk-static.com/images/media/profile_images/artists/188358/huge_avatar">
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+   
     
-</body>
-</html>
+  </ion-content>
+  

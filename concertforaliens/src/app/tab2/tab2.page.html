@@ -1,17 +1,43 @@
-<ion-header [translucent]="true">
+<ion-header translucent>
   <ion-toolbar>
-    <ion-title>
-      Tab 2
-    </ion-title>
+    <ion-title>Discover</ion-title>
   </ion-toolbar>
 </ion-header>
+<ion-content fullscreen class="ion-padding">
+  <ion-button expand="block" (click)="presentToastWithOptions()">Pair <ion-icon slot="end" name="bluetooth"></ion-icon></ion-button>
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Tab 2</ion-title>
-    </ion-toolbar>
-  </ion-header>
+<p>My Events</p>
 
-  <app-explore-container name="Tab 2 page"></app-explore-container>
+  <ion-slides pager = "true">
+
+    <ion-slide>
+      <h3>Lauv</h3>
+        <img src="https://asset-a.grid.id/crop/0x0:0x0/700x0/photo/2018/11/21/2533291029.jpg"
+        alt="alternatetext">
+        <ion-button>Groupchat</ion-button>
+    </ion-slide>
+    <ion-slide>
+      <h3>Lauv</h3>
+        <img src="https://asset-a.grid.id/crop/0x0:0x0/700x0/photo/2018/11/21/2533291029.jpg"
+        alt="alternatetext">
+        <ion-button>Groupchat</ion-button>
+    </ion-slide>
+    <ion-slide>
+      <h3>Lauv</h3>
+        <img src="https://asset-a.grid.id/crop/0x0:0x0/700x0/photo/2018/11/21/2533291029.jpg"
+        alt="alternatetext">
+        <ion-button>Groupchat</ion-button>
+    </ion-slide>
+    <ion-slide>
+      <h3>Lauv</h3>
+        <img src="https://asset-a.grid.id/crop/0x0:0x0/700x0/photo/2018/11/21/2533291029.jpg"
+        alt="alternatetext">
+        <ion-button>Groupchat</ion-button>
+    </ion-slide>
+
+  </ion-slides>
+
+
+<p>All Events</p>
 </ion-content>
+
